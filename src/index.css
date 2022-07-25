@@ -16,7 +16,11 @@ body {
 ul {
     list-style: none;
 }
-
+.feedback-results h2 {
+    border-bottom: 3px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 .container {
     max-width: 768px;
     margin: auto;
@@ -24,12 +28,12 @@ ul {
 }
 
 header {
-    height: 70px;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .card {
@@ -119,10 +123,31 @@ input:focus {
 }
 
 .feedback-stats {
-    color: #fff;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.graph-tabs {
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    border: 3px solid black;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+.graph-tabs li {
+    padding: 5px 10px;
+}
+.graph-tabs p {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .num-display {
@@ -195,6 +220,10 @@ input:focus {
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
  * document */
 .about-link a {
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+.about-link a {
     color: #fff;
     cursor: pointer;
 }
@@ -234,5 +263,35 @@ input:focus {
 
     .input-group input {
         width: 80%;
+    }
+}
+
+@media all and (min-width: 1225px) {
+    /* Body Layout */
+    .container {
+        max-width: 1500px;
+    }
+    .body-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 2rem;
+    }
+    .feedback-results {
+        padding: 0 3rem;
+        margin-top: 10px;
+    }
+    .feedback-results h2 {
+        margin-top: 0;
+    }
+    .about-link a {
+        margin-top: -60px;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+}
+@media all and (max-width: 1295px) {
+    .about-link a {
+        margin-right: 20px;
     }
 }

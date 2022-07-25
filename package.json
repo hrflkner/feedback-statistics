@@ -9,10 +9,12 @@
         "@testing-library/user-event": "^13.5.0",
         "concurrently": "^7.2.2",
         "firebase": "^9.9.1",
-        "framer-motion": "^4.1.17",
+        "framer-motion": "^6.5.1",
+        "plotly.js": "^2.13.2",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
         "react-icons": "^4.3.1",
+        "react-plotly.js": "^2.5.1",
         "react-router-dom": "^6.3.0",
         "react-scripts": "5.0.1",
         "web-vitals": "^2.1.4"

@@ -20,17 +20,22 @@ function App() {
                             exact
                             path="/"
                             element={
-                                <>
-                                    <FeedbackForm />
-                                    <FeedbackStats />
-                                    <FeedbackList />
-                                </>
+                                <section className="body-layout">
+                                    <section className="feedback-status">
+                                        <FeedbackForm />
+                                        <FeedbackStats />
+                                    </section>
+                                    <section className="feedback-results">
+                                        <h2>Client Feedback:</h2>
+                                        <FeedbackList />
+                                    </section>
+                                </section>
                             }
                         ></Route>
                         <Route path="/about" element={<AboutPage />} />
                     </Routes>
-                    <AboutIconLink />
                 </div>
+                <AboutIconLink />
             </Router>
         </FeedbackProvider>
     );
